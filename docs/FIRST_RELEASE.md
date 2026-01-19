@@ -40,7 +40,7 @@ cp app-release.apk vizzion-plus-v1.0.0.apk
 Atualize o arquivo `RELEASES.md`:
 
 ```markdown
-## [1.0.0] - 2026-01-XX
+## [1.0.0] - 2025-01-XX
 
 ### ✨ Novos Recursos
 - Player IPTV com suporte M3U e M3U8
