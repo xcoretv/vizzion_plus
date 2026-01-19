@@ -1,0 +1,58 @@
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+*.exe
+*.dmg
+*.deb
+*.rpm
+
+# Android specific
+*.keystore
+*.jks
+local.properties
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# iOS specific
+*.xcworkspace
+*.xcuserdata
+Pods/
+DerivedData/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+*.log
+
+# Dependencies
+node_modules/
+vendor/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+*.lcov
+
+# Documentation builds
+docs/_build/
+site/
+
+# Release notes drafts
+RELEASE_NOTES_DRAFT.md
