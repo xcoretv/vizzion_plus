@@ -1,0 +1,48 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Vizzion Plus ${{ steps.get_version.outputs.VERSION }}
+          body: |
+            ## Download
+            
+            Baixe o APK para Android abaixo:
+            
+            ### Android
+            - [Download APK Universal](../../releases/download/${{ steps.get_version.outputs.VERSION }}/vizzion-plus-${{ steps.get_version.outputs.VERSION }}.apk)
+            
+            ## Changelog
+            
+            Veja o arquivo [RELEASES.md](../../blob/main/RELEASES.md) para detalhes desta versão.
+            
+            ## Instalação
+            
+            Consulte o [Guia de Instalação](../../blob/main/docs/INSTALL_ANDROID.md) para instruções detalhadas.
+            
+            ---
+            
+            **Nota**: Este aplicativo não fornece conteúdo. Você deve ter suas próprias playlists ou credenciais Xtream Codes.
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,84 @@
+name: Feature Request
+description: Sugerir uma nova funcionalidade para o Vizzion Plus
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir uma nova funcionalidade! Por favor, preencha as informações abaixo.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou Necessidade
+      description: Existe algum problema que esta funcionalidade resolveria? Descreva-o.
+      placeholder: Eu sempre tenho dificuldade em...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução Proposta
+      description: Descreva a solução que você gostaria de ver implementada
+      placeholder: Seria ótimo se o app pudesse...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: Você considerou alguma solução ou funcionalidade alternativa?
+      placeholder: Outra opção seria...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade (na sua opinião)
+      description: Quão importante é esta funcionalidade para você?
+      options:
+        - Baixa - Seria legal ter
+        - Média - Melhoraria significativamente a experiência
+        - Alta - Essencial para o uso do app
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plataforma
+      description: Para qual plataforma esta funcionalidade seria relevante?
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - Smart TV
+        - Windows
+        - Mac
+        - Todas as plataformas
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockups ou Exemplos
+      description: Se possível, adicione mockups, screenshots de outros apps, ou links de referência
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação que possa ser útil
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Eu verifiquei que esta funcionalidade não foi sugerida anteriormente
+          required: true
+        - label: Esta funcionalidade é compatível com as diretrizes do app
+          required: true

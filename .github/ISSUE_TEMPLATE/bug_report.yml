@@ -1,0 +1,120 @@
+name: Bug Report
+description: Reportar um problema ou bug no Vizzion Plus
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um bug! Por favor, preencha as informações abaixo.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Bug
+      description: Descreva claramente o problema que você encontrou
+      placeholder: O que aconteceu?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para Reproduzir
+      description: Como podemos reproduzir este problema?
+      placeholder: |
+        1. Abra o app
+        2. Vá para...
+        3. Clique em...
+        4. Observe o erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento Esperado
+      description: O que você esperava que acontecesse?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento Atual
+      description: O que realmente aconteceu?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão do App
+      description: Qual versão do Vizzion Plus você está usando?
+      placeholder: ex. v1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plataforma
+      description: Em qual plataforma o bug ocorreu?
+      options:
+        - Android
+        - iOS
+        - Smart TV
+        - Windows
+        - Mac
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Dispositivo
+      description: Qual dispositivo você está usando?
+      placeholder: ex. Samsung Galaxy S21, Xiaomi Mi Box S
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: Versão do Sistema Operacional
+      description: Qual versão do sistema operacional?
+      placeholder: ex. Android 12, iOS 15.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou Mensagens de Erro
+      description: Cole aqui quaisquer logs ou mensagens de erro relevantes
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Se aplicável, adicione screenshots para ajudar a explicar o problema
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação que possa ser útil
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Eu verifiquei que não existe uma issue similar já aberta
+          required: true
+        - label: Eu estou usando a versão mais recente do app
+          required: false
+        - label: Eu tentei reinstalar o app
+          required: false
