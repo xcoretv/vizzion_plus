@@ -42,7 +42,7 @@ flutter build apk --release
 # Exemplo Android nativo  
 ./gradlew assembleRelease
 
-# Renomeie o arquivo
+# Renomeie o arquivo (ajuste o caminho conforme sua estrutura de projeto)
 mv app-release.apk vizzion-plus-v1.0.0.apk
 ```
 

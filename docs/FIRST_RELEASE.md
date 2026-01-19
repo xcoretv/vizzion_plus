@@ -27,6 +27,7 @@ flutter build apk --release
 # O APK geralmente estará em:
 # Flutter: build/app/outputs/flutter-apk/app-release.apk
 # Android: app/build/outputs/apk/release/app-release.apk
+# Adapte o caminho conforme a estrutura do seu projeto
 ```
 
 Renomeie o APK seguindo o padrão:
@@ -220,7 +221,7 @@ build-android:
     - name: Upload APK to Release
       uses: softprops/action-gh-release@v1
       with:
-        files: app/build/outputs/apk/release/app-release.apk
+        files: app/build/outputs/apk/release/app-release.apk  # Ajuste conforme sua estrutura
 ```
 
 ## ✅ Checklist Final
