@@ -71,6 +71,12 @@ Veja [RELEASES.md](RELEASES.md) para o histórico completo de versões.
 
 Contribuições são bem-vindas! Veja [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
 
+### 📦 Para Mantenedores
+
+Se você é mantenedor do projeto e quer criar releases, consulte:
+- [Guia Rápido de Hospedagem](docs/QUICKSTART.md)
+- [Como Criar o Primeiro Release](docs/FIRST_RELEASE.md)
+
 ## 📄 Licença
 
 Este projeto está licenciado sob os termos da licença especificada no arquivo [LICENSE](LICENSE).
